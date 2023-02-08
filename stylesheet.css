@@ -1,1 +1,33 @@
+.navLink {
+    text-decoration: none;
+}
 
+#page {
+    background-color: #0d1117;
+}
+
+.navContainer {
+    display: flex;
+}
+
+#aboutText {
+    color: #fff;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("background.jpg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  body, html {
+    height: 100%;
+    
+  }
