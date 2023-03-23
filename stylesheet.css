@@ -20,14 +20,63 @@
   
     /* Full height */
     height: 100%;
+    width: 100%;
   
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
+}
 
-  body, html {
+body, html {
     height: 100%;
-    
+    width: 100%;
+}
+
+.navList {
+    display: inline-flex;
+    float:left;
+}
+
+li {
+    padding: 0 10px 0 10p;
+    margin: 0 10px 0 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none; /* no underline */
+}
+.aboutMe{
+    display: inline-flex;
+}
+#aboutText {
+    width: 50vh;
+}
+
+.aboutImage {
+    width: 50vh;
+}
+
+.layout {
+    width: 1366px;
+    height: 768px;
+  
+    display: grid;
+    grid:
+      "header header header" auto
+      ". body rightSide" 1fr
+      "footer footer footer" auto
+      / auto 1fr auto;
+    gap: 8px;
   }
+  
+  .header { grid-area: header; }
+  .body { grid-area: body; }
+  .rightSide { grid-area: rightSide; }
+  .footer { grid-area: footer; color: white; background-color: black; }
+
+.footerText {
+    padding-top: 10px;
+    padding-left: 10px;
+}
