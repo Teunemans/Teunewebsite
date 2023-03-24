@@ -1,18 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 .navLink {
     text-decoration: none;
 }
 
 #page {
     background-color: #0d1117;
+    height: 100vh;
+    width: 100vw;
 }
 
-.navContainer {
-    display: flex;
-}
-
-#aboutText {
-    color: #fff;
-}
 
 .bg {
     /* The image used */
@@ -36,10 +33,16 @@ body, html {
 .navList {
     display: inline-flex;
     float:left;
+    margin: 10px ;
 }
 
+.navContainer {
+    display: flex;
+}
+
+
 li {
-    padding: 0 10px 0 10p;
+    padding: 0 10px 0 10px;
     margin: 0 10px 0 10px;
 }
 
@@ -47,16 +50,42 @@ a {
     color: white;
     text-decoration: none; /* no underline */
 }
-.aboutMe{
-    display: inline-flex;
+
+
+
+/* About layout */
+.aboutMe {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    height: 100vh;
+    width: 100vw;
 }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+    .div3 { grid-area: 2 / 1 / 3 / 2; }
+    .div4 { grid-area: 2 / 2 / 3 / 3; }
+    .div5 { grid-area: 3 / 1 / 4 / 2; }
+    .div6 { grid-area: 3 / 2 / 4 / 3; }
+    .div7 { grid-area: 4 / 1 / 5 / 2; }
+    .div8 { grid-area: 4 / 2 / 5 / 3; }
+
 #aboutText {
-    width: 50vh;
+    width: 48vw;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    display: inline;
 }
 
 .aboutImage {
-    width: 50vh;
+    width: 48vw;
+
 }
+
+
 
 .layout {
     width: 1366px;
